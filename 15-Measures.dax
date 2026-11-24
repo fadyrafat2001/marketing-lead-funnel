@@ -1,0 +1,19 @@
+// UNEXECUTED in Power BI Desktop. Create each measure separately in table FactLeads.
+
+Leads = COUNTROWS(FactLeads)
+
+Qualified Leads = CALCULATE(COUNTROWS(FactLeads), FactLeads[IsQualified] = 1)
+
+Won Deals = CALCULATE(COUNTROWS(FactLeads), FactLeads[IsWon] = 1)
+
+Qualification Rate = DIVIDE([Qualified Leads], [Leads])
+
+Qualified-to-Won Rate = DIVIDE([Won Deals], [Qualified Leads])
+
+Lead-to-Won Rate = DIVIDE([Won Deals], [Leads])
+
+Avg Days to Close = AVERAGE(FactLeads[DaysToClose])
+
+Avg Deal Value = AVERAGE(FactLeads[DealValue])
+
+Won Deals With Invalid Dates = CALCULATE(COUNTROWS(FactLeads), FactLeads[IsWon] = 1, ISBLANK(FactLeads[DaysToClose]))

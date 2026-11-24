@@ -1,0 +1,55 @@
+{
+ "leads": 350,
+ "qualified": 140,
+ "qualified_in_raw": 135,
+ "won": 28,
+ "qualified_to_won_pct": 20.0,
+ "qualified_to_won_pct_raw": 20.7,
+ "won_rows_unqualified_in_raw": 5,
+ "valid_days_to_close": 24,
+ "negative_close_rows": 4,
+ "by_channel": {
+  "Email": {
+   "leads": 110,
+   "share_of_leads_pct": 31.4,
+   "qualified": 44,
+   "won": 9,
+   "share_of_wins_pct": 32.1,
+   "lead_to_won_pct": 8.2,
+   "avg_days_to_close": 52.7
+  },
+  "Paid Search": {
+   "leads": 120,
+   "share_of_leads_pct": 34.3,
+   "qualified": 40,
+   "won": 4,
+   "share_of_wins_pct": 14.3,
+   "lead_to_won_pct": 3.3,
+   "avg_days_to_close": 42.0
+  },
+  "Referral": {
+   "leads": 40,
+   "share_of_leads_pct": 11.4,
+   "qualified": 28,
+   "won": 11,
+   "share_of_wins_pct": 39.3,
+   "lead_to_won_pct": 27.5,
+   "avg_days_to_close": 20.9
+  },
+  "Webinar": {
+   "leads": 80,
+   "share_of_leads_pct": 22.9,
+   "qualified": 28,
+   "won": 4,
+   "share_of_wins_pct": 14.3,
+   "lead_to_won_pct": 5.0,
+   "avg_days_to_close": 54.7
+  }
+ },
+ "webinar_pilot": {
+  "leads": 10,
+  "qualified": 0
+ },
+ "podcast_sponsor_leads": 0,
+ "avg_deal_value": 10566.0
+}
